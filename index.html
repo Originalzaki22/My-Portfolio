@@ -95,5 +95,17 @@
             <p>&copy; 2025 OriginalZaki22. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const progressBars = document.querySelectorAll(".progress");
+        progressBars.forEach(bar => {
+            const width = bar.style.width;
+            bar.style.width = "0"; // Reset width to 0
+            setTimeout(() => {
+                bar.style.width = width; // Animate to the set width
+            }, 100);
+        });
+    });
+</script>
 </body>
 </html>
